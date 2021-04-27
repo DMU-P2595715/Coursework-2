@@ -1,0 +1,383 @@
+body{
+  font-family: 'PT Sans',sans-serif;
+
+
+  background-image: url("../img/background1.webp") ;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: relative;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+body.body2{
+  font-family: 'PT Sans',sans-serif;
+
+
+  background-image: url("../img/background2.jpg") ;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: relative;
+  background-attachment: fixed;
+  background-position: center;
+
+}
+
+
+}
+/*styling the menu*/
+#menu{
+	width: 35px;
+	height: 30px;
+	margin: 30px 0 20px 20px;
+	cursor: pointer;
+}
+.bar{
+	height: 5px;
+	width: 100%;
+	background-color: #2F4F4F;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+/* sizing of the bars*/
+#bar1{
+	transform: translateY(-4px);
+}
+#bar3{
+	transform: translateY(4px);
+}
+/*styling the links*/
+.nav li a{
+	color: #fff;
+	text-decoration: none;
+}
+.nav li a:hover{
+	font-weight: bold;
+}
+.nav li{
+	list-style: none;
+	padding: 16px 0;
+}
+.nav{
+	padding: 0;
+	margin: 0 20px;
+	transition: 0.3s ease;
+	display: none;
+}
+/*styling the circle around the menue*/
+.menu-bg, #menu-bar{
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.menu-bg{
+	z-index: 1;
+	width: 0;
+	height: 0;
+	margin: 30px 0 20px 20px;
+	background: radial-gradient(circle,#483d8b,#696969);
+	border-radius: 50%;
+	transition: 0.3s ease;
+}
+#menu-bar{
+	z-index: 2;
+}
+.change-bg{
+	width: 550px;
+	height: 540px;
+	transform: translate(-60%,-30%);
+}
+.change .bar{
+	background-color: white;
+}
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+.change{
+	display: block;
+}
+
+nav{
+  text-align: center;
+  float:left;
+  width:100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-family:"Times New Roman", sans-serif;
+  font-size: 20px;
+  color:white;
+}
+/*Social media buttons*/
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  border-radius: 30%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+/*Facebook*/
+.fa-facebook {
+  background: #2F4F4F;
+  color: white;
+}
+/*Twitter*/
+.fa-twitter {
+  background: #2F4F4F;
+  color: white;
+}
+/*Youtube*/
+.fa-youtube {
+  background: #2F4F4F;
+  color: white;
+}
+/*Instagram*/
+.fa-instagram {
+  background: #2F4F4F;
+  color: white;
+}
+/* Spotify*/
+.fa-spotify {
+  background: #2F4F4F;
+  color: white;
+}
+
+
+
+
+.container{
+}
+.container .logo{
+  height: 60px;
+  object-fit: contain;
+}
+
+.hair{
+  border: 1px transparent;
+  border-radius: 0;
+  padding: 5px;
+  width: 400;
+  margin: auto;
+}
+
+/*making the logo a homepage/index link*/
+.container .logo a {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+height: 60px;}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+
+
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.slideshow_container {
+  float: left;
+  position: relative;
+  width: 500px;
+  height:auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+ p{
+   color: black
+   font-size: 4en;
+   font-family: arial, helvetica, sans-serif;
+   font-weight: normal;
+}
+
+h3{
+  padding: 10px;
+  text-align: left;
+  background: rgb(0, 0, 0, 0.6);
+  color: white;
+  font-size: 30px;
+
+
+}
+.description{
+
+  position: absolute;
+  right: 100px;
+  width: 500px;
+  color: white;
+  font-size: 4en;
+  font-family: arial, helvetica, sans-serif;
+  font-weight: normal;
+  padding: 10px;
+  margin: 50px;
+  background: rgba(0, 0, 0, 0.6);
+
+}
+
+.members{
+  float: left;
+  padding-left: 0px;
+    margin: 0px 15px 15px 0px;
+    width:300px;
+}
+
+.about{
+    width: 100%;
+    display: inline;
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+  }
+
+  .cast{
+    color: white;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.6);
+    margin: 0;
+
+  }
+
+  video{
+    margin-left: 5%;
+    width: 90%;
+    border: 5px ridge  rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-image: url(../img/sweet-little-lady.webp);
+  }
+/*Contact Form*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contact {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 50%;
+  margin-left: 325px;
+}

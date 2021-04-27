@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--Informs the web browser about the type and version of HTML being used-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--This makes the website mobile user friendly-->
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
+    <!--This is the title of the webpage-->
+    <title>The Big Push</title>
+    <!--This is a link to the css stylesheet where external style elements are created-->
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+    <!--social media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  </head>
+<!--The body where all of the content will be accessed-->
+<body class="body2">
+  <!--The hamburger menu-->
+  <div id="menu-bar">
+			<div id="menu" onclick="onClickMenu()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+			</div>
+      <!--The links to the different site pages-->
+			<ul class="nav" id="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="menu-bg" id="menu-bg"></div>
+    <!--Link to the script sheet-->
+		<script src="script.js"></script>
+<!--Styling of the logo-->
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">
+          <img class="hair" src="https://static.wixstatic.com/media/2ce60a_a0b349717f3b426aa79662a51d01c1d8~mv2.png/v1/crop/x_175,y_834,w_2646,h_839/fill/w_364,h_120,al_c,q_85,usm_0.66_1.00_0.01/THE-BIG-PUSH-HEAD-HAIR-LOGO-VECTOR.webp" alt="logo">
+      </div>
+    </div>
+    <!--I used breaks to create spaces on my page-->
+<br>
+<br>
+<br>
+<br>
+
+<!--Social media links-->
+    <nav class="social">
+
+      <a href="https://open.spotify.com/artist/4AOiNpcmfXTiWDB3uFszgn" class="fa fa-spotify"></a>
+
+      <a href="https://www.facebook.com/thebigpushband" class="fa fa-facebook"></a>
+
+      <a href="https://www.instagram.com/thebigpushband/" class="fa fa-instagram"></a>
+
+      <a href="https://twitter.com/thebigpushband" class="fa fa-twitter"></a>
+
+      <a href="https://www.youtube.com/channel/UCLuR_dea3ed8KbIoyvHUB0w" class="fa fa-youtube"></a>
+
+    </nav>
+    <br>
+    <br>
+    <br>
+<!--Contact Form-->
+
+<div class="contact">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="United Kingdom">United Kingdom</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
